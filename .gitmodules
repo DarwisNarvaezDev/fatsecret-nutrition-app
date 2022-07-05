@@ -1,0 +1,6 @@
+[submodule "nutrition-app"]
+	path = nutrition-app
+	url = https://github.com/DarwisNarvaezDev/nutrition-app.git
+[submodule "nutrition-api"]
+	path = nutrition-api
+	url = https://github.com/DarwisNarvaezDev/nutrition-api.git

@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+    nutrition-app-api-broker:
+      build: ./nutrition-api/
+      environment:
+        - FAT_SECRET_AUTH_URL=${FAT_SECRET_AUTH_URL}
+        - FAT_SECRET_CLIENT_ID=${FAT_SECRET_CLIENT_ID}
+        - FAT_SECRET_PASSWORD=${FAT_SECRET_PASSWORD}
+        - NUTRITION_API_PORT=${NUTRITION_API_PORT}
+      ports:
+        - "8080:8080"
+    nutrition-app:
+      build: ./nutrition-app/
+      environment:
+        - REACT_APP_API_BROKER_URL=${REACT_APP_API_BROKER_URL}
+        - REACT_APP_API_BROKER_PORT=${REACT_APP_API_BROKER_PORT}
+        - REACT_APP_API_BROKER_TYPES_SEARCH_MAPPING=${REACT_APP_API_BROKER_TYPES_SEARCH_MAPPING}
+        - REACT_APP_API_BROKER_RECIPES_SEARCH_MAPPING=${REACT_APP_API_BROKER_RECIPES_SEARCH_MAPPING}
+        - REACT_APP_GOOGLE_CLIENT_ID=${REACT_APP_GOOGLE_CLIENT_ID}
+        - BROWSER=${BROWSER}
+      ports:
+        - "3000:3000"
