@@ -8,14 +8,17 @@ How? by consuming the API of FatSecret here: https://platform.fatsecret.com/api/
 **First lets setup our environment:**
 
 Fatsecret: 
+
 1. Set up your account in FatSecret: https://platform.fatsecret.com/api/Default.aspx?screen=si&ReturnUrl=%2fapi%2fDefault.aspx%3fscreen%3dmyc
 2. Once you have your app, please add your public IP to 'Manage Your Api Keys > Allowed IP > App > Allowed IP Addresses' section.
 3. Get your *client id* and *client secret* and save it for the .env file that you will have to create tu run the app.
 
 Google:
 
-- The app has a build in google sign-in, so you will have to get a client id and OAut 2.0 sign in setup for this. Follow this steps: https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
-- Once you have your client id, save it for the .env file.
+If you want, you cand go ahead an add SSO to the sign in off canvas, just follow this steps:
+
+- The app has a built in google sign-in, so you will have to get a client id and OAut 2.0 sign in setup for this. Follow this steps: https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
+- Once you have your client id, just put it in the env variable named 'REACT_APP_GOOGLE_CLIENT_ID' and **enable** the functionality with the env: 'REACT_APP_GOOGLE_SSO_ENABLED'.
 
 # Cloning and runing this repo
 
