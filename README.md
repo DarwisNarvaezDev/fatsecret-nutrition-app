@@ -28,3 +28,4 @@ Google:
 1. Clone the repo with the subs: ``git clone --recurse-submodules -j8 https://github.com/DarwisNarvaezDev/fatsecret-nutrition-app.git``
 2. go to /fatsecret-nutrition-app and create a simple '.env' file, you can work on top of the example file in the repo, and expand all the variables in there.
 3. Make sure that you have docker and docker-compose on your pc and run ``docker-compose up -d`` 
+4. The app will be up and running in port :3000
