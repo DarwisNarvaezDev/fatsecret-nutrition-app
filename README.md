@@ -15,7 +15,7 @@ Fatsecret:
 
 Google:
 
-If you want, you can go ahead an add SSO to the off canvas, just follow this steps:
+**OPTIONAL** If you want, you can go ahead an add SSO to the off canvas, just follow this steps:
 
 - The app has a built in google sign-in, so you will have to get a client id and OAut 2.0 setup for this. Follow this steps: https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
 - Once you have your client id, just put it in the env variable named 'REACT_APP_GOOGLE_CLIENT_ID' and **enable** the functionality with the env: 'REACT_APP_GOOGLE_SSO_ENABLED'.
